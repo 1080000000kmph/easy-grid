@@ -1,0 +1,75 @@
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    /* Row Styles */
+    .row {
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      display: block;
+      position: relative
+    }
+
+    /* Bit Classes */
+    [class*='bit-'] {
+      float: left;
+      position: relative
+    }
+
+    /* Base Widths */
+    .bit-1 { width: 100% }
+    .bit-2, .bit-50 { width: 50% }
+    .bit-3 { width: 33.3333% }
+    .bit-4, .bit-25 { width: 25% }
+    .bit-5, .bit-20 { width: 20% }
+    .bit-30 { width: 30% }
+    .bit-35 { width: 35% }
+    .bit-40 { width: 40% }
+    .bit-45 { width: 45% }
+    .bit-55 { width: 55% }
+    .bit-60 { width: 60% }
+    .bit-65 { width: 65% }
+    .bit-70 { width: 70% }
+    .bit-75 { width: 75% }
+    .bit-80 { width: 80% }
+    .bit-85 { width: 85% }
+    .bit-90 { width: 90% }
+    .bit-95 { width: 95% }
+
+    /* Media Queries */
+    @media (max-width: 575px) {
+      [class*='bit-'] {
+        width: 100% !important
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 767px) {
+      .bit-2, .bit-50 { width: 50% }
+      .bit-3 { width: 50% }
+      .bit-4, .bit-25 { width: 50% }
+      .bit-5, .bit-20 { width: 33.3333% }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      .bit-3 { width: 50% }
+      .bit-4, .bit-25 { width: 33.3333% }
+      .bit-5, .bit-20 { width: 20% }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .bit-3 { width: 33.3333% }
+      .bit-4, .bit-25 { width: 25% }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1599px) {
+      /* No changes, using base widths */
+    }
+
+    @media (min-width: 1600px) {
+      /* No changes, using base widths */
+    }
+
